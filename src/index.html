@@ -1,0 +1,443 @@
+    @@include('./templates/main-header.html', { 'lang': 'ru', 'title': 'Новый проект' })
+
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <button class="btn" type="button">Предложить новость</button>
+                <div class="header__box">
+                    <a href="tel:83513651711" class="phone">8 (3513) 65-17-11</a>
+                    <div class="search">
+                        <button class="search__btn" type="button"></button>
+                    </div>
+                </div>
+                <div class="burger"><span></span></div>
+            </div>
+            <div class="header__menu">
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Телепроекты</a></li>
+                        <li><a href="#">Реклама</a></li>
+                        <li class="choise choise--grey">
+                            <a class="choise__btn choise__btn--grey js-choise-btn" data-choise-btn="2" href="#">Онлайн</a>
+                            <ul class="choise__box js-choise-box" data-choise-btn="2">
+                                <li><a href="#">Онлайн 1</a></li>
+                                <li><a href="#">Онлайн 2</a></li>
+                                <li><a href="#">Онлайн 3</a></li>
+                                <li><a href="#">Онлайн 4</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Программа передач</a></li>
+                    </ul>
+                    <div class="header__more">
+                        <div class="choise choise--grey">
+                            <button class="choise__btn choise__btn--grey js-choise-btn" data-choise-btn="3" type="button">Еще</button>
+                            <div class="header__box-list choise__box js-choise-box" data-choise-btn="3">
+                                <ul class="choise__wrap"  data-simplebar>
+                                    <li><a href="#">Программа передач</a></li>
+                                    <li><a href="#">Программа передач</a></li>
+                                    <li><a href="#">Программа передач</a></li>
+                                    <li><a href="#">Программа передач</a></li>
+                                    <li><a href="#">Программа передач</a></li>
+                                    <li><a href="#">Программа передач</a></li>
+                                    <li><a href="#">Программа передач</a></li>
+                                    <li><a href="#">Программа передач</a></li>
+                                    <li><a href="#">Программа передач</a></li>
+                                    <li><a href="#">Программа передач</a></li>
+                                    <li><a href="#">Программа передач</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social">
+                        <p>Подписывайтесь на нас:</p>
+                        <div class="social__icon">
+                            <a href="#">
+                                <svg width="16" height="16" viewBox="0 0 16 16">
+                                    <use xlink:href="/assets/images/svg-sprite/svg-sprite.svg#yt"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="social__icon">
+                            <a href="#">
+                                <svg width="16" height="16" viewBox="0 0 16 16">
+                                    <use xlink:href="/assets/images/svg-sprite/svg-sprite.svg#fb"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="social__icon">
+                            <a href="#">
+                                <svg width="16" height="16" viewBox="0 0 16 16">
+                                    <use xlink:href="/assets/images/svg-sprite/svg-sprite.svg#vk"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="social__icon">
+                            <a href="#">
+                                <svg width="16" height="16" viewBox="0 0 16 16">
+                                    <use xlink:href="/assets/images/svg-sprite/svg-sprite.svg#ok"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="social__icon">
+                            <a href="#">
+                                <svg width="16" height="16" viewBox="0 0 16 16">
+                                    <use xlink:href="/assets/images/svg-sprite/svg-sprite.svg#ig"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page -->
+    <div class="page">
+
+        <section class="page-content">
+
+            <div class="container">
+                <h1 class="title">Все новости</h1>
+                <div class="breadcrambs">
+                    <a href="#">Главная</a>
+                    <a href="#">Новости</a>
+                </div>
+
+                <div class="news-box">
+
+                    <div class="calendar news-box__calendar">
+                        <input type="text" class="calendar__input" autocomplete="off" readonly>
+                        <div class="calendar__air-datepicker"></div>
+                    </div>
+
+                    <div class="choise choise--border news-box__choise">
+                        <button class="choise__btn js-choise-btn" data-choise-btn="1" type="button">
+                            <span class="choise__title">Выбрать рубрику</span> 
+                        </button>
+
+                        <div class="choise__box js-choise-box js-choise-box--name js-news-category" data-choise-btn="1">
+                            <div  class="choise__wrap"  data-simplebar>
+                                <button type="button" class="choise__category" data-category-news="1">Медицина  </button>
+                                <button type="button" class="choise__category" data-category-news="2">Общество </button>
+                                <button type="button" class="choise__category" data-category-news="3">Коммуналка </button>
+                                <button type="button" class="choise__category" data-category-news="4">Политика </button>
+                                <button type="button" class="choise__category" data-category-news="">Показать все</button>
+                                <button type="button" class="choise__category" data-category-news="">Показать все</button>
+                                <button type="button" class="choise__category" data-category-news="">Показать все</button>
+                                <button type="button" class="choise__category" data-category-news="">Показать все</button>
+                                <button type="button" class="choise__category" data-category-news="">Показать все</button>
+                                <button type="button" class="choise__category" data-category-news="">Показать все</button>
+                                <button type="button" class="choise__category" data-category-news="">Показать все</button>
+                                <button type="button" class="choise__category" data-category-news="">Показать все</button>
+                                <button type="button" class="choise__category" data-category-news="">Показать все</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="net" id="news">
+                    
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="content-w">
+            <div class="container">
+                <div class="news-slider">
+                    <div class="news-slider__swiper swiper">
+
+                        <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            
+                            <div class="card card--row">
+                                <a href="#" class="card__link"></a>
+                                <div class="card__img">
+                                    <img src="/assets/images/i-1.jpg" alt="фото статьи">
+                                </div>
+                                <div class="card__box">
+                                    <div class="card__title">
+                                        <div class="card__cat">
+                                            <span>Медицина 1</span>
+                                        </div>
+                                        <span>02/02/2021</span>
+                                    </div>
+                                    <p class="card__text">
+                                        Госпитальная база закрыта, учреждение вернётся в «доковидный» режим после дезинфекции.  
+                                        Роддом Златоуста вновь откроет свои двери 8 февраля
+                                    </p>
+                                    <p class="card__sub-text">
+                                        Ещё одна главная новость дня — с 8 февраля златоустовский роддом возвращается к привычному формату работы. 
+                                        Госпитальную базу для лечения больных коронавирусной инфекцией переводят Ещё одна главная новость дня — с 8 февраля златоустовский роддом возвращается к привычному формату работы. Госпитальную базу для лечения больных коронавирусной инфекцией переводят
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card card--row">
+                                <a href="#" class="card__link"></a>
+                                <div class="card__img">
+                                    <img src="/assets/images/i-1.jpg" alt="фото статьи">
+                                </div>
+                                <div class="card__box">
+                                    <div class="card__title">
+                                        <div class="card__cat">
+                                            <span>Медицина 2</span>
+                                        </div>
+                                        <span>02/02/2021</span>
+                                    </div>
+                                    <p class="card__text">
+                                        Госпитальная база закрыта, учреждение вернётся в «доковидный» режим после дезинфекции.  
+                                        Роддом Златоуста вновь откроет свои двери 8 февраля
+                                    </p>
+                                    <p class="card__sub-text">
+                                        Ещё одна главная новость дня — с 8 февраля златоустовский роддом возвращается к привычному формату работы. 
+                                        Госпитальную базу для лечения больных коронавирусной инфекцией переводят Ещё одна главная новость дня — с 8 февраля златоустовский роддом возвращается к привычному формату работы. Госпитальную базу для лечения больных коронавирусной инфекцией переводят
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card card--row">
+                                <a href="#" class="card__link"></a>
+                                <div class="card__img">
+                                    <img src="/assets/images/i-1.jpg" alt="фото статьи">
+                                </div>
+                                <div class="card__box">
+                                    <div class="card__title">
+                                        <div class="card__cat">
+                                            <span>Медицина 3</span>
+                                        </div>
+                                        <span>02/02/2021</span>
+                                    </div>
+                                    <p class="card__text">
+                                        Госпитальная база закрыта, учреждение вернётся в «доковидный» режим после дезинфекции.  
+                                        Роддом Златоуста вновь откроет свои двери 8 февраля
+                                    </p>
+                                    <p class="card__sub-text">
+                                        Ещё одна главная новость дня — с 8 февраля златоустовский роддом возвращается к привычному формату работы. 
+                                        Госпитальную базу для лечения больных коронавирусной инфекцией переводят Ещё одна главная новость дня — с 8 февраля златоустовский роддом возвращается к привычному формату работы. Госпитальную базу для лечения больных коронавирусной инфекцией переводят
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card card--row">
+                                <a href="#" class="card__link"></a>
+                                <div class="card__img">
+                                    <img src="/assets/images/i-1.jpg" alt="фото статьи">
+                                </div>
+                                <div class="card__box">
+                                    <div class="card__title">
+                                        <div class="card__cat">
+                                            <span>Медицина 3</span>
+                                        </div>
+                                        <span>02/02/2021</span>
+                                    </div>
+                                    <p class="card__text">
+                                        Госпитальная база закрыта, учреждение вернётся в «доковидный» режим после дезинфекции.  
+                                        Роддом Златоуста вновь откроет свои двери 8 февраля
+                                    </p>
+                                    <p class="card__sub-text">
+                                        Ещё одна главная новость дня — с 8 февраля златоустовский роддом возвращается к привычному формату работы. 
+                                        Госпитальную базу для лечения больных коронавирусной инфекцией переводят Ещё одна главная новость дня — с 8 февраля златоустовский роддом возвращается к привычному формату работы. Госпитальную базу для лечения больных коронавирусной инфекцией переводят
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card card--row">
+                                <a href="#" class="card__link"></a>
+                                <div class="card__img">
+                                    <img src="/assets/images/i-1.jpg" alt="фото статьи">
+                                </div>
+                                <div class="card__box">
+                                    <div class="card__title">
+                                        <div class="card__cat">
+                                            <span>Медицина 3</span>
+                                        </div>
+                                        <span>02/02/2021</span>
+                                    </div>
+                                    <p class="card__text">
+                                        Госпитальная база закрыта, учреждение вернётся в «доковидный» режим после дезинфекции.  
+                                        Роддом Златоуста вновь откроет свои двери 8 февраля
+                                    </p>
+                                    <p class="card__sub-text">
+                                        Ещё одна главная новость дня — с 8 февраля златоустовский роддом возвращается к привычному формату работы. 
+                                        Госпитальную базу для лечения больных коронавирусной инфекцией переводят Ещё одна главная новость дня — с 8 февраля златоустовский роддом возвращается к привычному формату работы. Госпитальную базу для лечения больных коронавирусной инфекцией переводят
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card card--row">
+                                <a href="#" class="card__link"></a>
+                                <div class="card__img">
+                                    <img src="/assets/images/i-1.jpg" alt="фото статьи">
+                                </div>
+                                <div class="card__box">
+                                    <div class="card__title">
+                                        <div class="card__cat">
+                                            <span>Медицина 3</span>
+                                        </div>
+                                        <span>02/02/2021</span>
+                                    </div>
+                                    <p class="card__text">
+                                        Госпитальная база закрыта, учреждение вернётся в «доковидный» режим после дезинфекции.  
+                                        Роддом Златоуста вновь откроет свои двери 8 февраля
+                                    </p>
+                                    <p class="card__sub-text">
+                                        Ещё одна главная новость дня — с 8 февраля златоустовский роддом возвращается к привычному формату работы. 
+                                        Госпитальную базу для лечения больных коронавирусной инфекцией переводят Ещё одна главная новость дня — с 8 февраля златоустовский роддом возвращается к привычному формату работы. Госпитальную базу для лечения больных коронавирусной инфекцией переводят
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card card--row">
+                                <a href="#" class="card__link"></a>
+                                <div class="card__img">
+                                    <img src="/assets/images/i-1.jpg" alt="фото статьи">
+                                </div>
+                                <div class="card__box">
+                                    <div class="card__title">
+                                        <div class="card__cat">
+                                            <span>Медицина 3</span>
+                                        </div>
+                                        <span>02/02/2021</span>
+                                    </div>
+                                    <p class="card__text">
+                                        Госпитальная база закрыта, учреждение вернётся в «доковидный» режим после дезинфекции.  
+                                        Роддом Златоуста вновь откроет свои двери 8 февраля
+                                    </p>
+                                    <p class="card__sub-text">
+                                        Ещё одна главная новость дня — с 8 февраля златоустовский роддом возвращается к привычному формату работы. 
+                                        Госпитальную базу для лечения больных коронавирусной инфекцией переводят Ещё одна главная новость дня — с 8 февраля златоустовский роддом возвращается к привычному формату работы. Госпитальную базу для лечения больных коронавирусной инфекцией переводят
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="news-slider__pagination">
+                        <div class="swiper-pagination"></div>
+
+
+                        <div class="news-slider__prev">
+                            <button class="news-slider__btn" type="button">
+                                <svg width="16" height="16" viewBox="0 0 16 16">
+                                    <use xlink:href="/assets/images/svg-sprite/svg-sprite.svg#arrow-custom"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="news-slider__next">
+                            <button class="news-slider__btn" type="button">
+                                <svg width="16" height="16" viewBox="0 0 16 16">
+                                    <use xlink:href="/assets/images/svg-sprite/svg-sprite.svg#arrow-custom"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <!-- / Page -->
+
+    <footer class="footer">
+        
+            <div class="footer__top">
+                <div class="container">
+                    <div class="social">
+                        <p>Подписывайтесь на нас:</p>
+                        <div class="social__icon">
+                            <a href="#">
+                                <svg width="16" height="16" viewBox="0 0 16 16">
+                                    <use xlink:href="/assets/images/svg-sprite/svg-sprite.svg#yt"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="social__icon">
+                            <a href="#">
+                                <svg width="16" height="16" viewBox="0 0 16 16">
+                                    <use xlink:href="/assets/images/svg-sprite/svg-sprite.svg#fb"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="social__icon">
+                            <a href="#">
+                                <svg width="16" height="16" viewBox="0 0 16 16">
+                                    <use xlink:href="/assets/images/svg-sprite/svg-sprite.svg#vk"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="social__icon">
+                            <a href="#">
+                                <svg width="16" height="16" viewBox="0 0 16 16">
+                                    <use xlink:href="/assets/images/svg-sprite/svg-sprite.svg#ok"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="social__icon">
+                            <a href="#">
+                                <svg width="16" height="16" viewBox="0 0 16 16">
+                                    <use xlink:href="/assets/images/svg-sprite/svg-sprite.svg#ig"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="footer__down">
+                <div class="container">
+                    <p>© 2021 «Златоустовское телевидение»
+                        Политика конфиденциальности
+                    </p>
+                    <div class="footer__logo">
+                        <img src="/assets/images/footer-logo.png" alt="logo">
+                    </div>
+                </div>
+            </div>
+        
+    </footer>
+
+<!-- шаблон карточки новостей -->
+
+<template id="news-template">
+
+    <div class="net__el fadeInUp">
+
+        <div class="card js-news-card">
+            <a href="#" class="card__link"></a>
+            <div class="card__img">
+                <img src="" alt="фото статьи"><!-- поставить заглушку в src если с бека не придет картинка -->
+            </div>
+            <div class="card__title">
+                <div class="card__cat">
+                </div>
+                <span class="card__date"></span>
+            </div>
+            <p class="card__text">
+            </p>
+        </div>
+    
+    </div>
+    
+</template>
+
+<!-- /  шаблон карточки новостей -->
+
+
+    @@include('./templates/main-footer.html')

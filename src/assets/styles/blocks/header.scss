@@ -1,0 +1,193 @@
+
+.header{
+    padding: 20px 0;
+    border-bottom: 4px solid #373334;
+    margin-bottom: 50px;
+    position: relative;
+    &__top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__box{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: space-between;
+    }
+    &__menu{
+        & a{
+            color: #373334;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+            padding: 5px 5px;
+        }
+    }
+
+}
+@media(max-width: 1199px){
+    .header{
+        padding: 20px 0;
+        border-bottom: 4px solid #373334;
+        margin-bottom: 50px;
+        position: relative;
+        &__top{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &__box{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: space-between;
+        }
+        &__menu{
+            position: absolute;
+            left: 0;
+            top: 84px;
+            background-color: #E5E5E5;
+            width: 100%;
+            padding: 0px 20px;
+            z-index: 10;
+            max-height: 0;
+            overflow: hidden;
+            transition: all .5s ease;
+            & a{
+                color: #373334;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 22px;
+                padding: 5px 5px;
+            }
+            &.open{
+                max-height: 390px;
+                padding: 30px 20px;
+                overflow: hidden;
+            }
+        }
+        & .header__nav{
+            overflow: scroll;
+            max-height: 327px;
+            padding: 10px;
+        }
+        &__list{
+            & li{
+                padding: 5px 0;
+                border-bottom: 1px solid #373334;
+            }
+        }
+        & .choise__box{
+            position: static;
+            & li{
+                padding-left: 20px;
+                &:last-child{
+                    border-bottom: none;
+                }
+            }
+        }
+        & .header__more{
+            & .choise__btn{
+                display: none;
+            }
+            & .header__box-list.choise__box{
+                max-height: max-content;
+                & .choise__wrap{
+                    margin: 0;
+                    max-height: max-content;
+                    padding-right: 0;
+                }
+                & li{
+                    padding: 5px 0;
+                    border-bottom: 1px solid #373334;
+                }
+            }
+        }
+        & .social{
+            margin: 20px 0;
+            & p{
+                width: 100%;
+            }
+        }
+    
+    }
+}
+
+@media (min-width:1200px){
+    .header{
+        &__menu{
+            position: static;
+        }
+        & .header__list{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 30px;
+            & .choise__btn{
+                gap: 10px;
+            }
+        }
+        & .header__more{
+            & .choise__btn{
+                display:flex;
+                gap: 10px;
+                font-size: 18px;
+                line-height: 24px;
+                font-weight: 700;
+            }
+            & .header__box-list.choise__box{
+                max-height: 0;
+                &.open{
+                    max-height: 300px;
+                    overflow: hidden;
+                }
+            }
+        }
+        &__nav{
+            display: flex;
+            align-items: center;
+            & a{
+                font-size: 18px;
+                line-height: 24px;
+            }
+            & .social{
+                flex-grow: 1;
+                justify-content: flex-end;
+            }
+            & .choise__box{
+                width: 235px;
+                box-shadow: 0 15px 10px 0 rgba(0,0,0,0.2);
+                padding: 0;
+                & .choise__wrap {
+                    margin: 15px 0px 15px 0;
+                    max-height: 255px;
+                    padding-right: 10px;
+                }
+                & li{
+                    padding: 5px 0;
+                    border-bottom: 1px solid #373334;
+                }
+                &.open{
+                    padding: 15px;
+                }
+            }
+        }
+    }
+}
+@media(min-width: 1600px){
+    .header{
+        &__nav{
+            & a{
+                font-size: 20px;
+                line-height: 27px;
+            }
+        }
+        & .header__more{
+            & .choise__btn{
+                font-size: 20px;
+                line-height: 27px;
+            }
+        }
+    }
+}
