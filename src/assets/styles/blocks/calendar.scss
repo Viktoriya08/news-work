@@ -8,6 +8,7 @@
         border: 2px solid #373334;
         background-color: #E5E5E5;
         background: url(../images/calendar.svg) 20px center / auto no-repeat;
+        cursor: pointer;
         &:focus{
             background-color: #fff;
             outline: none;
