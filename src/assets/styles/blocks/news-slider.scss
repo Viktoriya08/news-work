@@ -16,6 +16,9 @@
                 fill: #9f0023;
             }
         }
+        &:not(.swiper-button-disabled) .news-slider__btn{
+            cursor: pointer;
+        }
     }
     & .news-slider__prev{
         left: 55px;
