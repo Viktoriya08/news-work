@@ -160,6 +160,9 @@
             }
             & .choise__btn:hover{
                 color: #9f0023;
+                &::after{
+                    background: url(../images/down-red.svg) center/contain no-repeat;
+                }
             }
             & .choise__box{
                 width: 235px;
