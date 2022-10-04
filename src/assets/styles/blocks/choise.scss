@@ -73,6 +73,9 @@
             text-align: left;
             display: block;
             width: 100%;
+            &:not([disabled]){
+                cursor: pointer;  
+            }
             &:not([disabled]):hover{
                 color: #9F0023;
             }
@@ -83,6 +86,7 @@
             border: 2px solid #373334;
             border-top: none;
             transition: .5s ease max-height;
+            z-index: 3;
         }
         & .choise__wrap{
             margin: 10px 5px;
