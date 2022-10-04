@@ -79,6 +79,9 @@
             &:not([disabled]):hover{
                 color: #9F0023;
             }
+            &[disabled]{
+                cursor: auto;
+            }
         }
         &.open{
             max-height: 250px;
