@@ -35,5 +35,10 @@
         & .social{
             margin-bottom: 50px;
         }
+        & .footer__down{
+            & p{
+                max-width: 250px;
+            }
+        }
     }
 }
