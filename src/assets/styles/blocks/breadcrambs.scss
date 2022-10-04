@@ -11,6 +11,9 @@
         }
         &:hover{
             color: #9F0023;
+            &::after{
+                color: #959595;
+            }
         }
     }
 }
