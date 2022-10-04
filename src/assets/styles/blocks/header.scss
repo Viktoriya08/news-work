@@ -155,6 +155,12 @@
                 flex-grow: 1;
                 justify-content: flex-end;
             }
+            & a:hover{
+                color: #9f0023;
+            }
+            & .choise__btn:hover{
+                color: #9f0023;
+            }
             & .choise__box{
                 width: 235px;
                 box-shadow: 0 15px 10px 0 rgba(0,0,0,0.2);
